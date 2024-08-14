@@ -1,0 +1,61 @@
+
+POST http://localhost:3000/register/ 
+Content-Type: application/json 
+
+{
+"username" : "shakunthala",
+"name"  : "shakunthala",
+"password":"Roja@123",
+"gender" : "Female",
+"location" : "chittoor"
+}
+
+### 
+POST http://localhost:3000/login/ 
+Content-Type: application/json 
+
+{
+    "username" : "shakunthala",
+    "password"  : "Roja@123"
+} 
+
+###
+POST http://localhost:3000/products/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoYWt1bnRoYWxhIiwiaWF0IjoxNzIzNjExNzgzfQ.Wam_L0gb8EIyzhBR4fmxLosXh-vEkTEec1LVMk3t7T0
+Content-Type: application/json 
+
+{
+ 
+  "id" : 5,
+  "image_url" : "https://assets.ccbp.in/frontend/react-js/nxt-trendz-img.png",
+  "description" : "Nxt Trendz application is an E-commerce application like Amazon, Flipkart where users can log in and see the list of products with search, filters, sort by, etc"
+
+} 
+
+
+
+### 
+DELETE http://localhost:3000/products/5 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoYWt1bnRoYWxhIiwiaWF0IjoxNzIzNjExNzgzfQ.Wam_L0gb8EIyzhBR4fmxLosXh-vEkTEec1LVMk3t7T0
+
+
+###
+
+GET http://localhost:3000/products/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJvamEiLCJpYXQiOjE3MjM1MzUwNzZ9.j0D4GBgbEH9de6kNySu6p9ksSwUknqhAfU-dihlhAtU
+###
+
+
+PUT http://localhost:3000/products/4 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJvamEiLCJpYXQiOjE3MjM1MzUwNzZ9.j0D4GBgbEH9de6kNySu6p9ksSwUknqhAfU-dihlhAtU
+Content-Type: application/json 
+
+{
+  "description" : "Nxt Trendz application is an E-commerce application like Amazon"
+}
+
+
+
+
+
+
